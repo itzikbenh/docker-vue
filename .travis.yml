@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t isaacben/docker-vue -f Dockerfile.dev . 
 
-scripts:
+script:
   - docker run isaacben/docker-vue npm run lint
